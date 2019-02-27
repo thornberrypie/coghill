@@ -1,0 +1,49 @@
+@mixin animation-spin($speed) {
+    animation: animation-spin $speed ease-in-out;
+  
+    @keyframes animation-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+  }
+  
+  @mixin animation-spin-reverse($speed) {
+    animation: animation-spin $speed ease-in-out;
+  
+    @keyframes animation-spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(-360deg);
+      }
+    }
+  }
+  
+  @mixin bp($class) {
+    @if $class == xxs {
+      @media (min-width: $bp-xxs) { @content; }
+    }
+    @else if $class == xs {
+      @media (min-width: $bp-xs) { @content; }
+    }
+    @else if $class == sm {
+      @media (min-width: $bp-sm) { @content; }
+    }
+    @else if $class == md {
+      @media (min-width: $bp-md) { @content; }
+    }
+    @else if $class == lg {
+      @media (min-width: $bp-lg) { @content; }
+    }
+    @else if $class == xl {
+      @media (min-width: $bp-xl) { @content; }
+    }
+    @else {
+      @warn "Breakpoint mixin supports: xxs, xs, sm, md, lg and xl";
+    }
+  }
