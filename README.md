@@ -1,2 +1,2 @@
-# coghill
-Website for The Coghill Centre in Whitianga, NZ
+# The Coghill Centre
+Built with create-react-app.
