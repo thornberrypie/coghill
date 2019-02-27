@@ -1,17 +1,24 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+import { BrowserRouter } from 'react-router-dom'
 import './scss/App.scss'
-import logo from './img/coghill-logo.svg';
+import Logo from './components/Logo'
+import Navbar from './components/Navbar'
+import Routes from './components/Routes'
 
 class App extends Component {
   render() {
     return (
-      <div className="wrapper">
-        <header className="header">
-          <img src={logo} className="header-logo" alt="logo" />
-        </header>
-      </div>
+      <BrowserRouter>
+        <div className="wrapper">
+          <header className="header flex flex--between">
+            <Logo/>
+            <Navbar/>
+          </header>
+          <Routes/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
 
-export default App;
+export default App
