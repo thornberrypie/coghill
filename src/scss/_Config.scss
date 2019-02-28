@@ -1,9 +1,19 @@
+$color-blue-dianne: #234B53;
+$color-creole: #0D0202;
 $color-half-baked: #89cbcd;
-$color-monarch: #830c0e;
+$color-mexican-red: #A52222;
+$color-ming: #397E84;
+$color-monarch: #f64548;
+$color-valencia: #D73C3C;
 $color-white: #ffffff;
 
-$color-brand: $color-half-baked;
-$color-text: $color-monarch;
+$color-green: $color-half-baked;
+$color-green-text: $color-ming;
+$color-red: $color-monarch;
+$color-red-dark: $color-mexican-red;
+$color-text: $color-creole;
+$color-text-dark: $color-blue-dianne;
+$color-red-text: $color-valencia;
 $color-bg: $color-white;
 
 $content-min-width: 19em;
@@ -11,6 +21,7 @@ $content-mid-width: 38em;
 $content-max-width: 76em;
 
 $space: 1rem;
+$size: $space;
 
 $bp-xxs: 24em; // 384px
 $bp-xs: 30em; // 480px

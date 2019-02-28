@@ -2,6 +2,32 @@ body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: $color-green-text;
+
+  &:focus, &:hover {
+    color: $color-red-text;
+  }
+}
+
+h1, h3, p {
+  color: $color-text;
+}
+
+h1 {
+  color: $color-red-dark;
+  font-size: $size*3;
+  margin: $space 0;
+}
+
 h2 {
-  font-size: 3rem;
+  color: $color-text-dark;
+  font-size: $size*1.6;
+  line-height: 1.2;
+  margin: $space 0;
+}
+
+h3 {
+  font-size: $size*1.1;
+  line-height: 1.3;
 }

@@ -1,10 +1,32 @@
 .navbar {
   ul {
-    margin: $space*2 $space;
+    margin: $space*2 $space 0;
   }
 
   li {
-    display: inline-block;
+    display: block;
+    font-size: $size*1.1;
+    font-weight: bold;
+    margin-bottom: $space;
     margin-left: $space;
+    text-transform: uppercase;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include bp(xs) {
+    ul {
+      margin: $space*5 $space 0 0;
+    }
+    
+    li {
+      display: inline-block;
+    }
   }
 }
