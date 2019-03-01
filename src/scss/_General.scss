@@ -1,45 +1,10 @@
-.container {
-  max-width: $content-max-width;
-  padding: $space;
-  text-align: left;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-
-  &--around {
-    justify-content: space-around;
-  }
-
-  &--between {
-    justify-content: space-between;
-  }
-
-  &--center {
-    justify-content: center;
-  }
-
-  &--column {
-    flex-direction: column;
-  }
-
-  &--padding {
-    li, p {
-      padding-left: $space;
-      padding-right: $space;
-    }
-  }
-}
-
 .hidden {
   display: none;
 }
 
 .hide {
   position: absolute;
-  z-index: -9999em;
+  left: -9999em;
 }
 
 .list {
@@ -57,8 +22,6 @@
   position: absolute;
 }
 
-.wrapper {
-  min-width: $content-min-width;
-  text-align: center;
+.w100 {
+  width: 100%;
 }
-  

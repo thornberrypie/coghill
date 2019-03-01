@@ -1,5 +1,5 @@
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -24,7 +24,7 @@ h2 {
   color: $color-text-dark;
   font-size: $size*1.6;
   line-height: 1.2;
-  margin: $space 0;
+  margin: 0 0 $space;
 }
 
 h3 {
