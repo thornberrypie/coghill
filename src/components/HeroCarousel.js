@@ -17,16 +17,16 @@ class HeroCarousel extends Component {
     return (
       <Carousel autoPlay>
         <div>
-          <img src="img/hero/carousel/1.jpg" alt="Kindly Leave the Stage" />
-          <p className="legend">{this.getCleanLegend(Legends[0])}</p>
+          <img src="img/hero/carousel/3.jpg" alt="Coghill Comedy" />
+          <p className="legend">{this.getCleanLegend(Legends[2])}</p>
         </div>
         <div>
           <img src="img/hero/carousel/2.jpg" alt="Neighbouring Planets" />
           <p className="legend">{this.getCleanLegend(Legends[1])}</p>
         </div>
         <div>
-          <img src="img/hero/carousel/3.jpg" alt="Coghill Comedy" />
-          <p className="legend">{this.getCleanLegend(Legends[2])}</p>
+          <img src="img/hero/carousel/1.jpg" alt="Kindly Leave the Stage" />
+          <p className="legend">{this.getCleanLegend(Legends[0])}</p>
         </div>
       </Carousel>
     )

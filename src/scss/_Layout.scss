@@ -54,6 +54,12 @@
 .hero {
   padding-top: 9rem;
 
+  .view--about &,
+  .view--contact &,
+  .view--events & {
+    padding-bottom: $space*1.5;
+  }
+
   @include bp(sm) {
     padding-top: $space*7.4;
   }

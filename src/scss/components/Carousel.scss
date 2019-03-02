@@ -54,3 +54,13 @@
     border-color: $color-red !important;
   }
 }
+
+.view--about,
+.view--contact,
+.view--events {
+  .control-dots,
+  .legend,
+  .thumbs-wrapper {
+    display: none !important;
+   }
+}
