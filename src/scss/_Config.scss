@@ -1,3 +1,4 @@
+// Color names from http://chir.ag/projects/name-that-color
 $color-blue-dianne: #234B53;
 $color-creole: #0D0202;
 $color-half-baked: #89cbcd;
@@ -7,6 +8,8 @@ $color-monarch: #f64548;
 $color-valencia: #D73C3C;
 $color-white: #ffffff;
 
+$color-bg: $color-white;
+$color-border: $color-blue-dianne;
 $color-green: $color-half-baked;
 $color-green-text: $color-ming;
 $color-red: $color-monarch;
@@ -14,11 +17,11 @@ $color-red-dark: $color-mexican-red;
 $color-text: $color-creole;
 $color-text-dark: $color-blue-dianne;
 $color-red-text: $color-valencia;
-$color-bg: $color-white;
 
-$content-min-width: 19em;
-$content-mid-width: 38em;
-$content-max-width: 76em;
+
+$content-min-width: 16em;
+$content-mid-width: 48em;
+$content-max-width: 96em;
 
 $space: 1rem;
 $size: $space;

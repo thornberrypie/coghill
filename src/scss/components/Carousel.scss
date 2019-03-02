@@ -1,8 +1,56 @@
 .carousel {
+  .control-dots {
+    bottom: $space/3 !important;
+    margin: 0 !important;
+
+    @include bp(md) {
+      bottom: $space/2 !important;
+    }
+
+    .dot {
+      height: $space/1.5 !important;
+      opacity: 0.5 !important;
+      width: $space/1.5 !important;
+
+      &:hover {
+        background: $color-red !important;
+        opacity: 1 !important;
+      }
+
+      &.selected {
+        opacity: 1 !important;
+
+        &:hover {
+          background: $color-white !important;
+        }
+      }
+    }
+  }
+
   .slide {
     .legend {
-      font-size: $size !important;
+      bottom: 0 !important;
       opacity: 1 !important;
+      padding: $space/1.5 $space/2 $space*1.5 !important;
+      position: relative !important;
+
+      @include bp(md) {
+        bottom: $space*2 !important;
+        font-size: $size !important;
+        padding-bottom: $space !important;
+        position: absolute !important;
+      }
     }
+  }
+
+  .thumbs-wrapper {
+    border-bottom: 1px solid $color-border;
+    margin: $space/1.5 2px $space !important;
+    padding-bottom: $space/2;
+  }
+
+  .thumb.selected,
+  .thumb:hover {
+    border-color: $color-red !important;
   }
 }

@@ -1,8 +1,11 @@
 .container {
   margin: 0 auto;
   max-width: $content-max-width;
-  padding: 0 $space;
   text-align: left;
+
+  @include bp(xs) {
+    padding: 0 $space;
+  }
 }
 
 .flex {
@@ -31,6 +34,7 @@
 }
 
 .header {
+  left: 0;
   position: fixed;
   top: 0;
   width: 100%;
@@ -59,6 +63,14 @@
   min-height: $space*12;
   position: relative;
   z-index: 3;
+}
+
+.section {
+  padding: 0 $space/2;
+
+  @include bp(sm) {
+    padding: $space;
+  }
 }
 
 .wrapper {

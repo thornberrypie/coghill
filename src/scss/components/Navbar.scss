@@ -1,6 +1,11 @@
 .navbar {
   ul {
-    margin: $space*2 $space 0;
+    margin: $space*2 $space 0 0;
+    text-align: right;
+
+    @include bp(xs) {
+      margin-top: $space*5;
+    }
   }
 
   li {
@@ -10,25 +15,23 @@
     margin-bottom: $space;
     margin-left: $space;
     text-transform: uppercase;
+
+    @include bp(xs) {
+      display: inline-block;
+    }
   }
 
   a {
     color: $color-text;
     text-decoration: none;
 
-    &:focus, &:hover, &.active {
+    &:hover {
       color: $color-text-dark;
-      text-decoration: underline;
     }
-  }
 
-  @include bp(xs) {
-    ul {
-      margin: $space*5 $space 0 0;
-    }
-    
-    li {
-      display: inline-block;
+    &:focus, &.active {
+      color: $color-red-dark;
+      text-decoration: underline;
     }
   }
 }
