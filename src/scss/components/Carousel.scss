@@ -1,6 +1,10 @@
 .carousel {
+  &.carousel-slider {
+    min-height: $space*6;
+  }
+
   .control-dots {
-    bottom: $space/3 !important;
+    bottom: $space/4 !important;
     margin: 0 !important;
 
     @include bp(md) {
@@ -29,16 +33,17 @@
 
   .slide {
     .legend {
+      border-radius: 0 !important;
       bottom: 0 !important;
+      margin-left: -50% !important;
       opacity: 1 !important;
       padding: $space/1.5 $space/2 $space*1.5 !important;
-      position: relative !important;
+      width: 100% !important;
 
       @include bp(md) {
         bottom: $space*2 !important;
         font-size: $size !important;
         padding-bottom: $space !important;
-        position: absolute !important;
       }
     }
   }

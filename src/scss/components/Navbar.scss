@@ -10,7 +10,6 @@
 
   li {
     display: block;
-    font-size: $size*1.1;
     font-weight: bold;
     margin-bottom: $space;
     margin-left: $space;
@@ -22,11 +21,13 @@
   }
 
   a {
-    color: $color-text;
+    //color: $color-text;
+    color: $color-green-text;
     text-decoration: none;
 
     &:hover {
       color: $color-text-dark;
+      //color: $color-green-text;
     }
 
     &:focus, &.active {

@@ -1,19 +1,14 @@
 .logo {
-  height: 9em;
-  width: 9em;
+  height: 8em;
+  width: 8em;
 
   @include bp(xs) {
-      height: 11em;
-      width: 11em;
+      height: 9em;
+      width: 9em;
   }
 
-  @include bp(sm) {
-      height: 12em;
-      width: 12em;
-  }
-
-  @include bp(md) {
-      height: 13em;
-      width: 13em;
+  @include bp(lg) {
+      height: 10em;
+      width: 10em;
   }
 }

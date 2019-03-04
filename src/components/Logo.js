@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from '../img/coghill-logo.svg'
+import logo from '../img/coghill-logo-black-200.png'
 import { Link} from 'react-router-dom'
 
 const Logo = () => {

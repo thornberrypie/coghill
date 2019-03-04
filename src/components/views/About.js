@@ -1,27 +1,27 @@
 import React from 'react';
-import Hero from '../img/hero/events.jpg'
+import Hero from '../../img/hero/about.jpg'
 import { Carousel } from 'react-responsive-carousel';
 
-const Events = () => {
+const About = () => {
   return (
     <div className="view view--events">
       <div className="hero">
         <Carousel>
           <div>
-            <img src={Hero} alt="Contact Coghill" />
-            <p className="legend">Contact</p>
+            <img src={Hero} alt="About Coghill" />
+            <p className="legend">About</p>
           </div>
         </Carousel>
       </div>
       <div className="container">
         <section className="section">
-          <h1>What's on</h1>
-          <h2>Event calendar here...</h2>
-          <h3></h3>
+          <h1>Who we are</h1>
+          <h2>Coghill, Monkey House history etc...</h2>
+          <h3>Other offerings</h3>
         </section>
       </div>
     </div>
   )
 }
 
-export default Events
+export default About

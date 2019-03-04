@@ -1,5 +1,5 @@
 import React from 'react';
-import Hero from '../img/hero/contact.jpg'
+import Hero from '../../img/hero/contact.jpg'
 import { Carousel } from 'react-responsive-carousel';
 
 const Contact = () => {
@@ -16,8 +16,7 @@ const Contact = () => {
       <div className="container">
         <section className="section">
           <h1>Get in touch!</h1>
-          <h2>Contact us and stuff...</h2>
-          <h3></h3>
+          <h2>Booking form coming soon...</h2>
         </section>
       </div>
     </div>

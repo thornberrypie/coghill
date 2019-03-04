@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route } from 'react-router-dom'
-import Home from '../views/Home'
-import About from '../views/About'
-import Events from '../views/Events'
-import Contact from '../views/Contact'
+import Home from './views/Home'
+import About from './views/About'
+import Events from './views/Events'
+import Contact from './views/Contact'
 
 const Routes = () => {
   return (

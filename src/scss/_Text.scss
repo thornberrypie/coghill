@@ -21,13 +21,14 @@ h1 {
 }
 
 h2 {
-  color: $color-text-dark;
+  color: $color-green-text;
   font-size: $size*1.6;
   line-height: 1.2;
   margin: 0 0 $space;
 }
 
 h3 {
+  color: $color-text-dark;
   font-size: $size*1.1;
   line-height: 1.3;
 }
