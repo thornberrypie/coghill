@@ -44,7 +44,7 @@
     background: $color-bg;
     content: '';
     height: 100%;
-    opacity: 0.666;
+    opacity: 0.75;
     position: absolute;
     width: 100%;
     z-index: -1;
@@ -52,7 +52,7 @@
 }
 
 .hero {
-  padding-top: 6.66rem;
+  padding-top: 8rem;
 
   .view--about &,
   .view--contact &,
@@ -60,8 +60,12 @@
     padding-bottom: $space*1.5;
   }
 
-  @include bp(sm) {
-    padding-top: $space*7.4;
+  @include bp(xs) {
+    padding-top: 6.6rem;
+  }
+
+  @include bp(lg) {
+    padding-top: 7.2rem;
   }
 }
 

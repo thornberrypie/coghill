@@ -3,6 +3,10 @@
     min-height: $space*6;
   }
 
+  .carousel-status {
+    display: none !important;
+  }
+
   .control-dots {
     bottom: $space/4 !important;
     margin: 0 !important;

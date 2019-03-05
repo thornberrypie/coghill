@@ -5,7 +5,9 @@ const Home = () => {
   return (
     <div className="view view--home">
       <div className="hero">
-        <HeroCarousel/>
+        <div className="container">
+          <HeroCarousel/>
+        </div>
       </div>
       <div className="container">
         <section className="section">
