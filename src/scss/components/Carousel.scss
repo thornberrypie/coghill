@@ -12,7 +12,7 @@
     margin: 0 !important;
 
     @include bp(md) {
-      bottom: $space/2 !important;
+      bottom: $space*1.5 !important;
     }
 
     .dot {
@@ -36,18 +36,40 @@
   }
 
   .slide {
+    background: none !important;
+    padding-bottom: $space*2;
+
     .legend {
       border-radius: 0 !important;
       bottom: 0 !important;
+      font-size: $size !important;
+      line-height: 1.1;
       margin-left: -50% !important;
       opacity: 1 !important;
-      padding: $space/1.5 $space/2 $space*1.5 !important;
+      padding: $space*0.5 $space/2 $space/1.5 !important;
       width: 100% !important;
 
       @include bp(md) {
-        bottom: $space*2 !important;
+        bottom: $space !important;
         font-size: $size !important;
-        padding-bottom: $space !important;
+        padding: $space !important;
+      }
+
+      .view--home & {
+        padding-bottom: $space*1.5 !important;
+
+        @include bp(md) {
+          padding-bottom: $space*2 !important;
+        }
+      }
+
+      a {
+        color: white;
+
+        &:focus, 
+        &:hover {
+          color: $color-green;
+        }
       }
     }
   }
@@ -68,7 +90,6 @@
 .view--contact,
 .view--events {
   .control-dots,
-  .legend,
   .thumbs-wrapper {
     display: none !important;
    }

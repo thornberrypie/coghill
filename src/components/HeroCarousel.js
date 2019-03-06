@@ -26,16 +26,16 @@ class HeroCarousel extends Component {
         stopOnHover={false}
       >
         <div>
-          <img src={img3} alt="Coghill Comedy" />
-          <p className="legend">{this.getCleanLegend(Legends[2])}</p>
+          <img src={img1} alt="Comedy at Coghill" />
+          <p className="legend">{this.getCleanLegend(Legends[0])}</p>
         </div>
         <div>
-          <img src={img2} alt="Neighbouring Planets" />
+          <img src={img2} alt="Live local music" />
           <p className="legend">{this.getCleanLegend(Legends[1])}</p>
         </div>
         <div>
-          <img src={img1} alt="Kindly Leave the Stage" />
-          <p className="legend">{this.getCleanLegend(Legends[0])}</p>
+          <img src={img3} alt="Offbeat Theatre productions" />
+          <p className="legend">{this.getCleanLegend(Legends[2])}</p>
         </div>
       </Carousel>
     )

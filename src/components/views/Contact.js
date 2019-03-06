@@ -9,13 +9,13 @@ const Contact = () => {
         <Carousel>
           <div>
             <img src={Hero} alt="Contact Coghill" />
-            <p className="legend">Contact</p>
+            <p className="legend"><a href="tel:+6478665115">Give us a call</a> to make your booking!</p>
           </div>
         </Carousel>
       </div>
       <div className="container">
         <section className="section">
-          <h1>Get in touch!</h1>
+          <h1>Get in touch</h1>
           <h2>Booking form coming soon...</h2>
         </section>
       </div>

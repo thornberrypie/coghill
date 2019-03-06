@@ -52,7 +52,7 @@
 }
 
 .hero {
-  padding-top: 8rem;
+  padding-top: $space*8;
 
   .view--about &,
   .view--contact &,
